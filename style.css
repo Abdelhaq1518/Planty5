@@ -16,4 +16,25 @@ Updated: 2023-09-03 17:42:38
 }
 
 
-  
+
+/****** Header ***********/
+.header {
+    display: flex;
+    justify-content:space-between;
+    width: 1440px;
+    height: 80px;
+   
+}
+/****** body ***********/
+.section-boissonenergisante {
+    width:1307px;
+    height: 950px;
+
+}
+.section-nousrencontrer{
+    width: 1440px;
+    height:554px;
+}
+.img-nousrencontrer{
+    transform: rotate(-71%)
+}
