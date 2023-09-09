@@ -23,6 +23,7 @@ Updated: 2023-09-03 17:42:38
     justify-content:space-between;
     width: 1440px;
     height: 80px;
+    color: white;
    
 }
 /****** body ***********/
@@ -34,7 +35,10 @@ Updated: 2023-09-03 17:42:38
 .section-nousrencontrer{
     width: 1440px;
     height:554px;
+    margin-top: 80px;
+    padding: top 50px;
 }
 .img-nousrencontrer{
     transform: rotate(-71%)
+    
 }
