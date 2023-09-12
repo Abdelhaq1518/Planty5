@@ -26,6 +26,7 @@ Updated: 2023-09-03 17:42:38
     color: white;
    
 }
+
 /****** body ***********/
 .section-boissonenergisante {
     width:1307px;
@@ -41,4 +42,12 @@ Updated: 2023-09-03 17:42:38
 .img-nousrencontrer{
     transform: rotate(-71%)
     
+}
+.img-nouscontacter{
+    transform: rotate(160°);
+}
+/* pour centrer le bouton d'envoi du formulaire et changer la taille de la police*/
+.wpforms-submit-container {
+    text-align: center;
+    text-transform: capitalize;
 }
