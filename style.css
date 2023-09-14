@@ -21,10 +21,18 @@ Updated: 2023-09-03 17:42:38
 .header {
     display: flex;
     justify-content:space-between;
-    width: 1440px;
+    width: 100%;
     height: 80px;
     color: white;
    
+}
+.navbar{
+    width:100%;
+}
+.elementor-14 .elementor-element.elementor-element-d79e5ab {
+    width: auto;
+}
+#main #content-wrap{padding-top: 0;
 }
 
 /****** body ***********/
@@ -46,8 +54,34 @@ Updated: 2023-09-03 17:42:38
 .img-nouscontacter{
     transform: rotate(160°);
 }
-/* pour centrer le bouton d'envoi du formulaire et changer la taille de la police*/
-.wpforms-submit-container {
-    text-align: center;
+.elementor-14 .elementor-element.elementor-element-95f8cf4 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+/* code pour centrer le bouton d'envoi du premier formulaire*/
+
+#wpforms-submit-608{
     text-transform: capitalize;
+    margin-left: 130px;
+    width: 198px;
+    height: 55px;
+    font-family:'Syne', sans-serif;
+}
+#wpforms-submit-608 :hover{
+    background-color: transparent;
+}
+
+#wpforms-608-field_1{
+    width:383px;
+    height:71px;
+}
+#wpforms-608-field_2{
+    width:383px;
+    
+}
+#wpforms-608-field_3{
+    width:383px;
+    height:71px;
 }
