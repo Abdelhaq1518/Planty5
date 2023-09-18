@@ -18,26 +18,21 @@ Updated: 2023-09-03 17:42:38
 
 
 /****** Header ***********/
-.header {
+.header{
     display: flex;
     justify-content:space-between;
     width: 100%;
     height: 80px;
     color: white;
-   
+    margin-left: 0;
 }
-.navbar{
-    width:100%;
-}
-.elementor-14 .elementor-element.elementor-element-d79e5ab {
-    width: auto;
-}
+
 #main #content-wrap{padding-top: 0;
 }
 
 /****** body ***********/
 .section-boissonenergisante {
-    width:1307px;
+    width:320px;
     height: 950px;
 
 }
@@ -60,11 +55,11 @@ Updated: 2023-09-03 17:42:38
     align-items: center;
     
 }
-/* code pour centrer le bouton d'envoi du premier formulaire*/
+/* code pour les caractéristiques du bouton d'envoi du premier formulaire*/
 
 #wpforms-submit-608{
     text-transform: capitalize;
-    margin-left: 130px;
+    margin-left: 100px ;
     width: 198px;
     height: 55px;
     font-family:'Syne', sans-serif;
@@ -72,7 +67,7 @@ Updated: 2023-09-03 17:42:38
 #wpforms-submit-608 :hover{
     background-color: transparent;
 }
-
+/* code pour les dimensions de chaque champ du formulaire*/
 #wpforms-608-field_1{
     width:383px;
     height:71px;
@@ -85,3 +80,58 @@ Updated: 2023-09-03 17:42:38
     width:383px;
     height:71px;
 }
+ /* code correspondant au formulaire commander*/
+ 
+.formulaire-commander{
+    display: flex;
+    flex-direction: row;
+    gap: 70px;
+  
+}
+.wpcf7 input[type="text"]{
+background-color: white!important;
+border-radius:7px;
+width: 383px;
+height: 71px;
+
+}
+.formulaire-commander h4{
+    color: white;
+    font-size: 20px;
+    line-height:24px;
+}
+.formulaire-commander h3{
+    color:white;
+    width: 278px;
+    font-size:30px;
+    line-height: 36px;
+}
+
+.section-informations{
+    display: flex;
+    flex-direction: column;
+    width:383px;
+    gap:15px;
+}
+.section-livraison{
+    display: flex;
+    flex-direction: column;
+    width:383px;
+    gap:15px;
+
+}
+.wpcf7 input[type="submit"]{
+    display: flex;
+    flex-direction: column;
+    margin-left: 330px;
+    margin-top: 50px;
+    text-align: center;
+    text-transform: capitalize;
+    background-color:#E0B9B4 ;
+    height: 55px;
+    border-radius: 5px;
+    font-size: 15px;
+    line-height: 37px;
+}
+
+
