@@ -29,69 +29,110 @@ Updated: 2023-09-03 17:42:38
 
 #main #content-wrap{padding-top: 0;
 }
+h2{
+    width:100%
+}
 
 /****** body ***********/
-.section-boissonenergisante {
-    width:320px;
-    height: 950px;
 
-}
-.section-nousrencontrer{
-    width: 1440px;
-    height:554px;
-    margin-top: 80px;
-    padding: top 50px;
-}
-.img-nousrencontrer{
-    transform: rotate(-71%)
-    
-}
-.img-nouscontacter{
-    transform: rotate(160°);
-}
-.elementor-14 .elementor-element.elementor-element-95f8cf4 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    
-}
-/* code pour les caractéristiques du bouton d'envoi du premier formulaire*/
+/* code pour les caractéristiques du premier formulaire*/
 
-#wpforms-submit-608{
-    text-transform: capitalize;
-    margin-left: 100px ;
+#wpcf7-f1321-p14-o1 input[type=text]{
+    width:383px;
+    height: 71px;
+    border-radius: 7px;
+    background-color: white;
+}
+.wpcf7-textarea{
+    width:383px;
+    height: 237px;
+    background-color: white;
+    border-radius: 7px;
+    margin-bottom: 50px;
+}
+#wpcf7-f1321-p14-o1 input[type=submit]{
     width: 198px;
     height: 55px;
-    font-family:'Syne', sans-serif;
+    margin-left: 90px;
+    text-transform: capitalize;
+    background-color: #DC9F96;
+    border-radius: 5px;
 }
-#wpforms-submit-608 :hover{
-    background-color: transparent;
-}
-/* code pour les dimensions de chaque champ du formulaire*/
-#wpforms-608-field_1{
-    width:383px;
-    height:71px;
-}
-#wpforms-608-field_2{
-    width:383px;
+/*code du compteur de quantités*/
+
+.compteur-ligne{
+    display: flex!important;
     
 }
-#wpforms-608-field_3{
-    width:383px;
-    height:71px;
+
+.compteur-ligne input[type=text]{
+    display: flex;
+    width:51px ;
+    height: 56px;
+    background-color: white;
+}   
+.formulaire-compteur p{
+    margin:0;
 }
+/*boutons + et -*/
+
+.boutonscompteur{ 
+    display: flex;
+    flex-direction: column!important;
+    color: white!important;
+    width: 51px;
+    height: 56px;
+    
+    }
+    .boutoncompteur1{
+        color: white;
+        border:0;
+        border-top-right-radius:5px;
+    }
+    .boutoncompteur2{
+        color:white;
+        border:0;
+        border-top:1px solid white;
+        border-bottom-right-radius:5px;
+    }
+
+    .boutonvalider .wpcf7-submit{
+        width:100px;
+        height:56px;
+        border-top-left-radius: 5px;
+        border-bottom-left-radius:5px;
+        background-color:#E0B9B4!important;
+        
+
+    }
+
+
+   
+
+/*effacement d'une span class issue d'Elementor*/
+.wpcf7-spinner{
+    display: none;
+}
+
+
+
+
+
  /* code correspondant au formulaire commander*/
- 
+
 .formulaire-commander{
     display: flex;
     flex-direction: row;
     gap: 70px;
+    background-color:#3B8E46;
   
 }
-.wpcf7 input[type="text"]{
+
+
+.formulaire-commander input[type="text"]{
 background-color: white!important;
 border-radius:7px;
-width: 383px;
+width:383px;
 height: 71px;
 
 }
@@ -102,7 +143,7 @@ height: 71px;
 }
 .formulaire-commander h3{
     color:white;
-    width: 278px;
+    width:278px;
     font-size:30px;
     line-height: 36px;
 }
@@ -120,7 +161,7 @@ height: 71px;
     gap:15px;
 
 }
-.wpcf7 input[type="submit"]{
+#wpcf7-f1177-p16-o5 input[type="submit"]{
     display: flex;
     flex-direction: column;
     margin-left: 330px;
@@ -133,5 +174,11 @@ height: 71px;
     font-size: 15px;
     line-height: 37px;
 }
+
+/*media queries*/
+
+
+    
+
 
 
