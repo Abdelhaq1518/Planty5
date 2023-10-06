@@ -11,31 +11,86 @@ Updated: 2023-09-03 17:42:38
 
 */
 /* GENERAL */
+
 * {
     font-family: 'Syne', sans-serif;
+    border: 1px solid blue;
+
+
 }
-
-
 
 /****** Header ***********/
-.header{
-    display: flex;
-    justify-content:space-between;
-    width: 100%;
-    height: 80px;
-    color: white;
-    margin-left: 0;
+
+header{
+display:flex!important;
+width:100%;
+max-height: 80px;
+justify-content: space-between;
+align-items: center;
+
+
+
+
+
 }
 
-#main #content-wrap{padding-top: 0;
+/*suppression de marges et paddings sur le header*/
+
+.elementor-widget-wrap.elementor-element-populated {
+    margin: 0 !important;
+    padding: 0 !important;
 }
-h2{
-    width:100%
+
+
+
+
+
+
+#main #content-wrap{
+    
+    padding: 0;
+
+}
+
+/*code du menu de navigation*/
+
+.hfe-nav-menu{
+display: flex;
+justify-content: space-between!important;
+align-items: center;
+width: 90%;
+margin-left: 165px!important;
+
+
+}
+
+
+
+
+#menu-item-106{
+    height: 19px;
+    display: flex;
+    width: 8%;
+    align-items: center;
+    font-weight: 400!important;
+    margin-left:25px!important;
+    
+    
+
+   
+}
+#menu-item-105{
+    display: flex;
+    width:16%;
+    justify-content: space-between;
+    font-weight: 700;
+    margin-left: 143px!important;
 }
 
 /****** body ***********/
 
-/* code pour les caractéristiques du premier formulaire*/
+
+/* code du formulaire Nous Rencontrer*/
 
 #wpcf7-f1321-p14-o1 input[type=text]{
     width:383px;
@@ -114,10 +169,6 @@ h2{
     display: none;
 }
 
-
-
-
-
  /* code correspondant au formulaire commander*/
 
 .formulaire-commander{
@@ -130,10 +181,10 @@ h2{
 
 
 .formulaire-commander input[type="text"]{
-background-color: white!important;
-border-radius:7px;
-width:383px;
-height: 71px;
+    background-color: white!important;
+    border-radius:7px;
+    width:100%;
+    height: 71px;
 
 }
 .formulaire-commander h4{
@@ -153,18 +204,18 @@ height: 71px;
     flex-direction: column;
     width:383px;
     gap:15px;
+    
 }
 .section-livraison{
     display: flex;
     flex-direction: column;
     width:383px;
     gap:15px;
-
 }
 #wpcf7-f1177-p16-o5 input[type="submit"]{
     display: flex;
     flex-direction: column;
-    margin-left: 330px;
+    margin-left: 250px;
     margin-top: 50px;
     text-align: center;
     text-transform: capitalize;
@@ -177,6 +228,296 @@ height: 71px;
 
 /*media queries*/
 
+@media (min-width: 1025px) and (max-width: 1300px) {
+   
+    header{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: auto;
+    }
+    .hfe-site-logo{
+       max-width: 120px!important;
+    }
+    .hfe-nav-menu{
+        display: flex!important;
+        align-items: center!important;
+        margin-left: 150px!important;
+        
+
+}
+#menu-item-106{
+    width: 114px;
+    height: 19px;
+    display: flex;
+    align-items: center;
+    font-weight: 400!important;
+    margin-left:15px!important;
+    
+    
+
+   
+}
+#menu-item-105{
+    display: flex;
+    max-width: 100px;
+    justify-content: space-between;
+    font-weight: 600;
+    margin-left: 50px!important;
+}
+
+
+}
+
+
+@media screen and (max-width:768px){
+    header{
+        display: flex;
+        flex-direction: column!important;
+    }
+    .hfe-site-logo{
+        width: 100px;
+    }
+.elementor-heading-title{
+        width:100%;
+        font-weight: 600!important;
+        font-size: 28px!important;
+    
+    }
+.hfe-nav-menu{
+display: flex!important;
+width: 100%;
+align-items: center;
+margin-left: 50px!important;
+
+ }
+ #menu-item-106{
+    width: 60px;
+    height: 19px;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    font-weight: 200!important;
+    margin: auto !important; 
+}
+#menu-item-105{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: stretch;
+    width: 115px;
+    font-weight: 500;
+    margin: auto !important;
+}
+
+.formulaire-commander{
+    display: flex; 
+    flex-direction: column;
+       
+}
+.formulaire-commander input[type="text"]{
+    background-color: white!important;
+    border-radius:7px;
+    width: 99%;
+    height: 71px;
+    margin:0;
+    
+}
+.formulaire-commander h3{
+    color:white;
+    width:99%;
+    font-size:20px;
+    line-height: 36px;
+}
+.formulaire-commander h4{
+    color: white;
+    font-size: 20px;
+    line-height:24px;
+}
+
+.section-informations{
+    display: flex;
+    flex-direction: column;
+    width:99%;
+    gap:15px;
+}
+.section-livraison{
+    display: flex;
+    flex-direction: column;
+    width:99%;
+    gap:15px;
+
+}
+#wpcf7-f1177-p16-o5 input[type="submit"]{
+    display: flex;
+    flex-direction: column;
+    margin-left: auto;
+    margin-top: 50px;
+    text-align: center;
+    text-transform: capitalize;
+    background-color:#E0B9B4 ;
+    height: 55px;
+    border-radius: 5px;
+    font-size: 15px;
+    line-height: 37px;
+}
+.compteur-ligne input[type=text]{
+    display: flex;
+    width:51px ;
+    height: 56px;
+    background-color: white;
+    margin:0;
+}
+
+
+}
+
+@media screen and (min-width: 320px) and (max-width: 768px) {
+
+    header{
+        display: flex;
+        flex-direction: column!important;
+    }
+
+    .hfe-nav-menu{
+        display: flex!important;
+        width: 100%;
+        align-items: center;
+        margin-left: 50px!important;
+        
+         }
+         #menu-item-106{
+            width: 60px;
+            height: 19px;
+            display: flex;
+            order: 99;
+            flex-direction: column;
+            align-items: stretch;
+            font-weight: 200!important;
+            margin: auto !important; 
+        }
+        #menu-item-105{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            order:1;
+            align-items: stretch;
+           max-width: 60px;
+            font-weight: 500;
+            margin: auto !important;
+        }
+        
+    .hfe-site-logo{
+        display: flex;
+        max-width: 80px;
+    }
+    .elementor-heading-title{
+        width:100%;
+        font-weight: 600!important;
+        font-size: 18px!important;
+    
+    }
+
+    .formulaire-commander{
+        display: flex; 
+        flex-direction: column;
+        gap:40px;
+          
+    }
+    .formulaire-commander input[type="text"]{
+        background-color: white!important;
+        border-radius:7px;
+        width: 99%;
+        height: 71px;
+        
+    }
+    .formulaire-commander h3{
+        color:white;
+        width:99%;
+        font-size:20px;
+        line-height: 30px;
+        margin:auto;
+    }
+    .formulaire-commander h4{
+        color: white;
+        font-size: 10px;
+        line-height:15px;
+    }
+    
+    
+    
+    .section-informations{
+        display: flex;
+        flex-direction: column;
+        width:99%;
+        gap:15px;
+    }
+    .section-livraison{
+        display: flex;
+        flex-direction: column;
+        width:99%;
+        gap:15px;
+    
+    } 
+    #wpcf7-f1177-p16-o5 input[type="submit"]{
+        display: flex;
+        flex-direction: column;
+        margin-left: 80px;
+        margin-top: 50px;
+        text-align: center;
+        text-transform: capitalize;
+        background-color:#E0B9B4 ;
+        height: 55px;
+        border-radius: 5px;
+        font-size: 15px;
+        line-height: 37px;
+    }
+    .boutonvalider .wpcf7-submit{
+        width:70px;
+        height:38px;
+        gap:0px;
+        margin-right: 5px;
+        border-top-left-radius: 5px;
+        border-bottom-left-radius:5px;
+        background-color:#E0B9B4!important;
+        
+
+    }
+    .h2{
+        line-height: 30px;
+        font-weight: 500;
+    }
+    .compteur-ligne{
+        display: flex!important;
+        
+    }
+    
+    .compteur-ligne input[type=text]{
+        display: flex;
+        width:51px ;
+        height: 56px;
+        background-color: white;
+    } 
+    .boutonscompteur{ 
+        display: flex;
+        flex-direction: column!important;
+        color: white!important;
+        width: 51px;
+        height: 56px;
+        
+        } 
+    .boutonvalider .wpcf7-submit{
+        width: 80px;
+        height:36px;
+        border-top-left-radius: 5px;
+        border-bottom-left-radius:5px;
+        background-color:#E0B9B4!important;
+        
+
+    }
+
+
+  }
 
     
 
