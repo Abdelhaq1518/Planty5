@@ -401,6 +401,8 @@ header{
         font-size: 28px!important;
     
     }
+    /*menu de navigation*/
+
 .hfe-nav-menu{
 display: flex!important;
 justify-content: center;
@@ -409,6 +411,8 @@ margin: auto;
 
 
  }
+ /*Lien Nous rencontrer*/
+
  #menu-item-106{
     display: flex;
     justify-content: center;
@@ -420,6 +424,8 @@ margin: auto;
     
     
 }
+/*Lien Commander*/
+
 #menu-item-105{
     display: flex;
     justify-content: center;
@@ -428,6 +434,7 @@ margin: auto;
     margin:auto;
     font-size: 60px;
 }
+/*Lien Admin*/
 
 .menu-item-admin{
         display: flex;
@@ -592,6 +599,7 @@ header{
         display: flex;
         flex-direction: column!important;
     }
+/*Menu de Navigation*/
 
 .hfe-nav-menu{
     display: flex!important;
@@ -602,33 +610,35 @@ header{
     gap: 30px;
         
          }
-    #menu-item-106{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: auto;
-    margin:auto;
-    font-size: 50px;
-        
-            
-            
+/*Lien Nous Rencontrer*/
+
+#menu-item-106{
+display: flex;
+justify-content: center;
+align-items: center;
+width: auto;
+margin:auto;
+font-size: 50px!important;    
         }
-        #menu-item-105{
-        display: flex;
-        justify-content: center;
-        align-items:center ;
-        width: auto;
-        margin:auto;
-        font-size: 50px;
+/*Lien Commander*/
+
+#menu-item-105{
+display: flex;
+justify-content: center;
+align-items:center ;
+width: auto;
+margin:auto;
+font-size: 50px!important;
         }
-        
+/*Lien Admin*/
+
 .menu-item-admin{
-    display: flex;
-    justify-content:center;
-     align-items:center;
-    width: auto !important;
-    margin-right:10px!important;
-    font-size: 50px;
+display: flex;
+justify-content:center;
+align-items:center;
+width: auto !important;
+margin-right:10px!important;
+font-size: 50px;
         }
 .hfe-site-logo{
 display: flex;
@@ -742,6 +752,9 @@ max-width: 80px;
         line-height: 30px;
         font-weight: 500;
     }
+
+/*Compteur quantités*/
+
     .compteur-ligne{
         display: flex!important;
         justify-content: center!important;
